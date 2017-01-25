@@ -1,4 +1,9 @@
 let React = require('react');
 let ReactDOM = require('react-dom');
-let AppComponent = require('./components/productBox.js');
-ReactDOM.render(<AppComponent />, document.getElementById('content'));
+
+require('./style.less');
+
+let Index = require('./components/index.js');
+
+
+ReactDOM.render(<Index />, document.getElementById('content'));
