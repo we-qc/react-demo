@@ -1,7 +1,7 @@
-var React = require('react');
+import React from 'react';
 
-var SideBar = React.createClass({
-    render: function () {
+class SideBar extends React.Component {
+    render() {
         return (
             <div className="uk-width-medium-1-4">
                 <div className="uk-panel uk-panel-box">
@@ -113,6 +113,6 @@ var SideBar = React.createClass({
             </div>
         );
     }
-});
+}
 
-module.exports = SideBar;
+export default SideBar;

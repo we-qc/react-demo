@@ -1,19 +1,22 @@
-var React = require('react');
-var MainListNav = require('./mainListNav.js');
-var MainListItem =require('./mainListItem.js');
+import React from 'react';
+import MainListNav from './mainListNav';
+import MainListItem from './mainListItem';
 
-var MainList = React.createClass({
-	render: function() {
-		return (
-			<div className="uk-width-medium-3-4 uk-row-first">
+class MainList extends React.Component {
+    constructor(props) {
+        super(props);
+    }
+    render() {
+        return (
+            <div className="uk-width-medium-3-4 uk-row-first">
                 <div className="uk-panel uk-panel-box">
-                	<MainListNav />
-                	<hr className="uk-article-divider" />
-                	<MainListItem />
+                    <MainListNav />
+                    <hr className="uk-article-divider" />
+                    <MainListItem />
                 </div>
             </div>
-		)
-	}
-});
+        )
+    }
+}
 
-module.exports = MainList;
+export default MainList;

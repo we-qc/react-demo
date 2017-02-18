@@ -1,9 +1,9 @@
-let React = require('react');
-let ReactDOM = require('react-dom');
 
-require('./style.less');
+//-require('./style.less');
+//import './style.less'
 
-let Index = require('./components/index.js');
-
+import React from 'react';
+import ReactDOM from 'react-dom';
+import Index from './components/index.js';
 
 ReactDOM.render(<Index />, document.getElementById('content'));
